@@ -1,0 +1,206 @@
+/* Legal Page Specific Styles */
+
+.page-header {
+    background: var(--gradient-dark);
+    padding: 120px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-glow);
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-blue);
+    text-shadow: 0 0 15px var(--accent-blue-glow);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.legal-content {
+    padding: 80px 0;
+    background-color: var(--bg-dark);
+}
+
+.legal-tabs {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tab-buttons {
+    display: flex;
+    background-color: var(--bg-lighter);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-button {
+    padding: 15px 30px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-blue);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px var(--accent-blue-glow);
+}
+
+.tab-button:hover {
+    color: var(--accent-blue);
+}
+
+.tab-button:hover::before {
+    transform: scaleX(0.8);
+}
+
+.tab-button.active {
+    color: var(--accent-blue);
+    background-color: rgba(13, 225, 240, 0.05);
+}
+
+.tab-button.active::before {
+    transform: scaleX(1);
+}
+
+.tab-content {
+    padding: 40px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.tab-pane h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px rgba(13, 225, 240, 0.3);
+}
+
+.license-text p,
+.privacy-text p,
+.disclaimer-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.privacy-text h4,
+.disclaimer-text h4 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--accent-purple);
+}
+
+.privacy-text ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.privacy-text ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.privacy-text ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Active link in navbar */
+.nav-links a.active {
+    color: var(--accent-blue);
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .tab-buttons {
+        flex-direction: column;
+    }
+    
+    .tab-button {
+        text-align: left;
+        padding: 15px 20px;
+    }
+    
+    .tab-button.active {
+        border-left: 2px solid var(--accent-blue);
+    }
+    
+    .tab-button.active::before {
+        display: none;
+    }
+    
+    .tab-content {
+        padding: 20px;
+    }
+}

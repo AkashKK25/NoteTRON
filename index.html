@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteTRON | A Simple Note-Taking App</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/icon.png" alt="NoteTRON Logo">
+                <span>NoteTRON</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>NoteTRON</h1>
+                <p class="tagline">Create. Label. Utilize.</p>
+                <p class="hero-description">A lightweight, aimple, and elegant note-taking Desktop application.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Download Now</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/app-preview.png" alt="NoteTRON App Screenshot">
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Create Notes Instantly</h3>
+                    <p>Create, organize, and manage notes with just a few clicks. NoteTRON's clean interface makes note-taking effortless.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search within your notes</h3>
+                    <p>Quickly find what you need with full-text search across titles and content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h3>Easy Editing</h3>
+                    <p>Edit notes on the fly with intuitive interface. Auto-saving ensures you never lose your work.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Available for Windows, macOS, and Linux. Your notes stay with you no matter which device you use.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Dark Theme</h3>
+                    <p>Enjoy a sleek, dark theme with neon accents. Easy on the eyes for long working sessions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3>Lightweight</h3>
+                    <p>Minimal resource usage means NoteTRON runs smoothly even on older computers. Fast startup, responsive interface.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section id="app-preview">
+        <div class="container">
+            <h2 class="section-title">App Preview</h2>
+            <div class="preview-container">
+                <div class="preview-image">
+                    <img src="img/app-preview.png" alt="NoteTRON App Preview">
+                </div>
+                <div class="preview-features">
+                    <div class="preview-feature">
+                        <h3><i class="fas fa-check-circle"></i> Collapsible Notes</h3>
+                        <p>Expand and collapse notes to keep your workspace organized and focused.</p>
+                    </div>
+                    <div class="preview-feature">
+                        <h3><i class="fas fa-check-circle"></i> One-Click Copy</h3>
+                        <p>Copy note content with a single click for easy sharing and reference.</p>
+                    </div>
+                    <div class="preview-feature">
+                        <h3><i class="fas fa-check-circle"></i> Automatic Saving</h3>
+                        <p>Your notes are automatically saved as you type. No manual saving required.</p>
+                    </div>
+                    <div class="preview-feature">
+                        <h3><i class="fas fa-check-circle"></i> Offline Access</h3>
+                        <p>All your notes are stored locally. No internet connection needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <div class="container">
+            <h2 class="section-title">Download NoteTRON</h2>
+            <p class="section-description">Free. Download for your platform below.</p>
+            
+            <div class="download-container">
+                <div class="version-card">
+                    <div class="version-header">
+                        <h3>NoteTRON App</h3>
+                        <div class="version-selector">
+                            <label for="version-select">Select Version:</label>
+                            <div class="select-wrapper">
+                                <select id="version-select">
+                                    <option value="1.2.0">v1.2.0 (Latest - April 2025)</option>
+                                    <option value="0.0.1">v0.0.1 (Early Notes App)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="version-info">
+                        <div class="version-info-block" data-version="1.2.0">
+                            <h4>What's New in v1.2.0:</h4>
+                            <ul class="version-features">
+                                <li><i class="fas fa-check"></i> Initial release with TRON theme</li>
+                                <li><i class="fas fa-check"></i> Note creation, editing, and deletion</li>
+                                <li><i class="fas fa-check"></i> Search functionality</li>
+                                <li><i class="fas fa-check"></i> Improved note resizing</li>
+                                <li><i class="fas fa-check"></i> Copy note content feature</li>
+                                <li><i class="fas fa-check"></i> Categories</li>
+                            </ul>
+                        </div>
+                        <div class="version-info-block" data-version="0.0.1" style="display: none;">
+                            <h4>What's in v0.0.1:</h4>
+                            <ul class="version-features">
+                                <li><i class="fas fa-check"></i> Simple UI</li>
+                                <li><i class="fas fa-check"></i> More Stable</li>
+                                <li><i class="fas fa-check"></i> Original dark theme</li>
+                                <li><i class="fas fa-x"></i> No Categories</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="download-options">
+                        <h4>Download For:</h4>
+                        <div class="platform-buttons">
+                            <a href="#" class="platform-btn" id="windows-download" data-version="1.0.0" data-platform="win">
+                                <i class="fab fa-windows"></i> Windows
+                                <span class="file-size">143 MB</span>
+                            </a>
+                            <a href="#" class="platform-btn" id="mac-download" data-version="1.0.0" data-platform="mac">
+                                <i class="fab fa-apple"></i> macOS
+                                <span class="file-size">73.0 MB</span>
+                            </a>
+                            <a href="#" class="platform-btn" id="linux-download" data-version="1.0.0" data-platform="linux">
+                                <i class="fab fa-linux"></i> Linux
+                                <span class="file-size">24.7 MB</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="download-notes">
+                        <p><i class="fas fa-info-circle"></i> All downloads are available for Windows 10/11, macOS 10.15+, and Ubuntu 20.04+ (or compatible Linux distributions).</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is NoteTRON?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>NoteTRON is a lightweight Note-Taking app designed to be simple yet powerful, with no bloat or unnecessary features allowing you to focus on storing your notes quickly and efficiently.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is NoteTRON free to use?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! NoteTRON is completely free.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where are my notes stored?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>NoteTRON stores all your notes locally on your device. This ensures privacy and allows you to access your notes even without an internet connection.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I transfer my notes between devices?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can export your notes as json files and import those notes elsewhere using the same json file.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the system requirements?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>NoteTRON is very lightweight and should run smoothly on most systems. Minimum requirements: Windows 7+, macOS 10.10+, or Ubuntu 18.04+ (or equivalent Linux distribution).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I report bugs or suggest features?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can report bugs or suggest features through our contact form, by emailing <span style="color: var(--accent-orange);">akashkondaparthi@gmail.com</span>, or forking in the <a style="color: var(--accent-purple);" href="https://github.com/akashkk25/notetron-app" target="_blank">GitHub Repo.</a> We value your feedback!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions, suggestions, or feedback? I'd love to hear from you!</p>
+                    <div class="contact-method">
+                        <a href="mailto:akashkondaparthi@gmail.com"><i class="fas fa-envelope"></i>akashkondaparthi@gmail.com</a>
+                    </div>
+                    <div class="contact-method">
+                        <a href="https://github.com/akashkk25/notetron-app" target="_blank"><i class="fas fa-code-branch"></i>Contribute on GitHub</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/akashkondaparthi@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="NoteTRON Website Contact">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/icon.png" alt="NoteTRON Logo">
+                    <span>NoteTRON</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="https://akashkk25.github.io/Data-Portfolio" target="_blank">About Me</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="legal/legal.html#privacy">Privacy Policy</a></li>
+                            <li><a href="legal/legal.html#disclaimer">Terms of Service</a></li>
+                            <li><a href="legal/legal.html#license">License</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NoteTRON. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/akashkk25/notetron-app" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
