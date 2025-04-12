@@ -246,13 +246,29 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Update href based on platform and version
             const platform = button.dataset.platform;
-            button.href = `${getFileExtension(version, platform)}`;
+            button.href = getFileExtension(version, platform);
+
+            button.setAttribute('download', `notetron-${version}-${platform}`);
+            button.setAttribute('target', '_blank');
             
             // Add animation effect
             button.classList.add('version-updated');
             setTimeout(() => {
                 button.classList.remove('version-updated');
             }, 1000);
+        });
+
+        platformButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Prevent default link behavior
+                e.preventDefault();
+                
+                // Open the link in a new tab
+                window.open(this.href, '_blank');
+                
+                // Optional: track download
+                console.log(`Download initiated: ${this.dataset.platform} version ${this.dataset.version}`);
+            });
         });
         
         // Save selected version to localStorage for persistence
